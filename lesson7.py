@@ -1,6 +1,6 @@
 # Lesson 7 Loops and iterations
 
-# break
+# break ends the loop
 while True :
     line = input('>>> ')
     if line == 'done' :
@@ -8,7 +8,7 @@ while True :
     print(line)
 print('Done!')
 
-# continue
+# continue ends iteration
 while True :
     line = input('>>> ')
     if line[0] == '#' :
