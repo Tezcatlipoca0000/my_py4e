@@ -1,0 +1,5 @@
+This plain text file is for testing
+particularly...
+
+the way to read files using python
+good riddance
