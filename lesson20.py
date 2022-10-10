@@ -30,7 +30,9 @@ print(counter.items()) # returns a "tuple" a list of key:value pairs
 for key,value in counter.items() :
     print(key, value)
 
-# example: print the most common word and the frecuency in a text
+# example: print the most common word and the frecuency in a text 
+# ADVANCED PARSING: notice the import string statement and translate method 
+import string # to call string.punctuation
 counter = dict()
 while True :
     fname = input('Enter a file name: ')
@@ -41,6 +43,8 @@ while True :
         continue
     break
 for line in fhandle :
+    line = line.translate(line.maketrans('', '', string.punctuation)) # for removing punctuation
+    line = line.lower()
     words = line.split()
     for word in words :
         counter[word] = counter.get(word, 0) + 1
