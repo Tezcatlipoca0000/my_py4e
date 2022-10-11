@@ -35,3 +35,5 @@ if len(lst) > 2 : print(lst[:3])
 a = {'c': 10, 'a': 1, 'b': 2}
 print( sorted( [ (v,k) for k,v in a.items() ] ) )
 print( sorted( [ (v,k) for k,v in a.items() ], reverse=True ) )
+x = sorted([(v,k) for k,v in a.items()])
+print('final', x)
