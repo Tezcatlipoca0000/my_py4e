@@ -36,4 +36,5 @@ a = {'c': 10, 'a': 1, 'b': 2}
 print( sorted( [ (v,k) for k,v in a.items() ] ) )
 print( sorted( [ (v,k) for k,v in a.items() ], reverse=True ) )
 x = sorted([(v,k) for k,v in a.items()])
-print('final', x)
+y = [(v,k) for k,v in a.items()]
+print('final', 'sorted:', x, 'un-sorted:', y)
