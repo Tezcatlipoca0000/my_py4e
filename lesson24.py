@@ -17,3 +17,9 @@ print(c) # ['From: more text :']
 print(d) # ['From:']
 print(e) # ['whatever@nonsense.com']
 print(f) # ['whatever@nonsense.com']
+
+s = 'A message from csev@umich.edu to cwen@iupui.edu about meeting @2PM'
+lst1 = re.findall('\\S+@\\S+', s)
+lst2 = re.findall('\S+@\S+', s)
+print(lst1)
+print(lst2) # Print the same!! so i guess \\ == \
