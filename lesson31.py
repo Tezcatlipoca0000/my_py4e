@@ -27,7 +27,7 @@ data2 = '''[
     }
 ]'''
 info2 = json.loads(data2)
-print(type(info2))
+print(type(info2)) # <class 'list'>
 print(info2)
 for obj in info2 :
     print(obj)
