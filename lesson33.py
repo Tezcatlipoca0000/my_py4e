@@ -28,7 +28,7 @@ class Counter2 :
     def __del__(self) :
         print("I'm being destroyed!", self.x)
 
-z = Counter2()
+z = Counter2('z')
 z.count()
 z.count()
 z = 'A new value!'
