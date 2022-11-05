@@ -7,6 +7,7 @@ print('sql connection:', conn, type(conn), dir(conn))
 cur = conn.cursor()
 print('connection cursor:', cur, type(cur), dir(cur))
 
+# execute() Pasa una instrucción a la base de datos.
 cur.execute('DROP TABLE IF EXISTS Counts')
 cur.execute('''
 CREATE TABLE Counts (email TEXT, count INTEGER)''')
