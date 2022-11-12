@@ -66,3 +66,5 @@ for entry in all :
     cur.execute('INSERT OR REPLACE INTO Track (title, album_id, len, rating, count) VALUES (?,?,?,?,?)', (name, album_id, length, rating, count))
 
     conn.commit()
+
+cur.close()
